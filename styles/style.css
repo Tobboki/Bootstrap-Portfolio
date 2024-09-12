@@ -29,18 +29,6 @@ body {
 }
 
 /* *Utility classes* */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .container {
   background-color: aliceblue;
 }
@@ -50,6 +38,7 @@ body {
 /* Header */
 
 .header {
+  background-color: aliceblue;
   transition: box-shadow 0.4s;
   box-shadow: 0 4px 4px 0 hsla(22, 100%, 8%, 0.2);
 }
@@ -99,5 +88,15 @@ body {
 }
 /* Home Section End */
 
+
+/* About Section */
+.about-title {
+  letter-spacing: 0.125em;
+}
+
+.paragraph {
+  color: var(--text-color);
+}
+/* About Section End */
 
 /* *General queries* */
