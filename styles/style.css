@@ -99,4 +99,14 @@ body {
 }
 /* About Section End */
 
+/* Services Section */
+.service-card {
+  transition: box-shadow .4s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: var(--box-shadow);
+}
+/* Services Section End */
+
 /* *General queries* */
