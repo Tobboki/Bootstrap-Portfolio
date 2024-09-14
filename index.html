@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/img/Logo/favicon.ico" type="image/x-icon">
   <!-- Links -->
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="styles/style.css">
+
   <!-- Links End -->
   <title>Portfolio</title>
 </head>
@@ -55,7 +63,7 @@
     <!-- Home Section -->
     <section class="container py-4" id="home">
       <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 text-lg-start text-center ">
+        <div class="col-lg-6 col-md-12 text-lg-start text-center mb-4">
           <h3> Hey, </h3>
           <h1 class="text-uppercase fw-bold"> I'm Yaser M. Shabana </h1>
           <h2 class="text-uppercase fw-semibold"> Front-End Developer </h2>
@@ -76,7 +84,7 @@
     <!-- About Section -->
     <section class="container py-4 mt-5" id="about">
       <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 text-center">
+        <div class="col-lg-6 col-md-12 text-center mb-4">
           <img class="about-img | img-fluid" src="assets/img/about-us.png" width="420" height="420" alt="demonstrative image">
         </div>
 
@@ -100,64 +108,418 @@
     <section class="container py-4 text-center mt-5" id="services">
       <h1>SERVICES OFFERED</h1>
       
-      <p class="fw-medium">Explore our wide range of creative and technical services, each tailored to meet your unique business needs and drive growth.</p>
+      <p class="fw-medium">Explore our wide range of creative and technical services, each tailored to meet your unique business needs and drive growth. <br>
+      <span class="text-warning">Note: this isn't real services.</span>
+      </p>
 
       <div class="row mt-5">
+
+        <!-- Front-End Card -->
         <div class="col-lg-3 col-md-6 col-sm-12 py-2">
           <article class="card service-card text-center h-100">
             <div class="card-img-top p-4">
               <img src="assets/img/services/s1.png" alt="beautiful website">
             </div>
 
-            <div class="card-body ">
+            <div class="card-body">
               <h5 class="card-title"> Front-End Developer </h5>
               <p class="card-text">Building responsive, engaging websites using Angular, Bootstrap, and Tailwind. Delivering clean, efficient code with a focus on performance, usability, and cross-browser compatibility.</p>
             </div>
           </article>
         </div>
+        <!-- Front-End Card End -->
 
+        <!-- UI/UX Card -->
         <div class="col-lg-3 col-md-6 col-sm-12 py-2">
           <article class="card service-card text-center h-100">
             <div class="card-img-top p-4">
               <img src="assets/img/services/s2.png" alt="Color wheel">
             </div>
 
-            <div class="card-body ">
+            <div class="card-body">
               <h5 class="card-title"> UI/UX Designer </h5>
               <p class="card-text">Developing custom WordPress themes and plugins, optimizing websites for performance and SEO. Creating tailored, user-friendly sites that meet the specific needs of clients.</p>
             </div>
           </article>
         </div>
+        <!-- UI/UX Card End -->
 
+        <!-- WordPress Card -->
         <div class="col-lg-3 col-md-6 col-sm-12 py-2">
           <article class="card service-card text-center h-100">
             <div class="card-img-top p-4">
               <img src="assets/img/services/s3.png" alt="WordPress Logo">
             </div>
 
-            <div class="card-body ">
+            <div class="card-body">
               <h5 class="card-title"> Wordpress Developer </h5>
               <p class="card-text">Enhancing website visibility through strategic SEO practices. Improving rankings on search engines by optimizing both on-page and off-page elements for long-term growth.</p>
             </div>
           </article>
         </div>
+        <!-- WordPress Card End -->
 
+        <!-- SEO Optimization Card -->
         <div class="col-lg-3 col-md-6 col-sm-12 py-2">
           <article class="card service-card text-center h-100">
             <div class="card-img-top p-4">
               <img src="assets/img/services/s4.png" alt="Rocket illustration">
             </div>
 
-            <div class="card-body ">
+            <div class="card-body">
               <h5 class="card-title"> SEO Optimization </h5>
               <p class="card-text">Boosting your online visibility with expert SEO strategies. I ensure your website ranks higher in search engine results through effective on-page and off-page techniques.</p>
             </div>
           </article>
         </div>
+        <!-- SEO Optimization Card End -->
 
       </div>
     </section>
     <!-- Services Section End -->
+
+    <!-- Work Section -->
+    <section class="container py-4 text-center mt-5" id="work">
+      <h1>MY RECENT WORK</h1>
+
+      <div class="my-4 d-flex flex-column align-items-center">
+        <ul class="nav nav-pills mb-3 gap-1" id="pills-tab" role="tablist">
+
+          <!-- All Tab -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+          </li>
+          <!-- All Tab End -->
+
+          <!-- Front-End Tab -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-front-end-tab" data-bs-toggle="pill" data-bs-target="#pills-front-end" type="button" role="tab" aria-controls="pills-front-end" aria-selected="false">Front-End</button>
+          </li>
+          <!-- Front-End Tab End -->
+
+          <!-- UI/UX Tab -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-ui-tab" data-bs-toggle="pill" data-bs-target="#pills-ui" type="button" role="tab" aria-controls="pills-ui" aria-selected="false">UI/UX</button>
+          </li>
+          <!-- UI/UX Tab End -->
+
+          <!-- WordPress Tab -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-wp-tab" data-bs-toggle="pill" data-bs-target="#pills-wp" type="button" role="tab" aria-controls="pills-wp" aria-selected="false">WordPress</button>
+          </li>
+          <!-- WordPress Tab End -->
+
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+            <div class="row">
+
+              <!-- Amazon Clone Card -->
+              <div class="col-12">
+                <div class="work-card | card mb-4">
+                  <div class="row g-2">
+                    <a class="col-xl-8" href="https://amazonclonesearch.netlify.app/" target="_blank">
+                      <img src="assets/img/Work/Amazon-Project.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                    </a>
+
+                    <div class="col-xl-4">
+                      <div class="card-body">
+                        <h5 class="card-title">Amazon Clone</h5>
+
+                        <p class="card-text fw-semibold text-body-secondary">
+                          A fully functional e-commerce web app simulating the Amazon shopping experience. Built with HTML, CSS, and JavaScript for a responsive UI. Implemented API requests for data, CRUD operations for products and orders, and search functionality using URL parameters for efficient filtering.
+                        </p>
+
+                        <div class="py-2 my-2">
+                          <a href="https://github.com/Tobboki/Amazon-project" class="btn btn-secondary fw-semibold" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            Github
+                          </a>
+
+                          <a href="https://amazonclonesearch.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                            <i class="ri-external-link-line"></i>
+                            Live Demo
+                          </a>
+                        </div>
+
+                        <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Amazon Clone Card End -->
+
+              <!-- Gym Card -->
+              <div class="col-12">
+                <div class="work-card | card mb-4">
+                  <div class="row g-2">
+                    <a class="col-xl-8" href="https://herculesgymresponsive.netlify.app/" target="_blank">
+                      <img src="assets/img/Work/Hercules.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                    </a>
+
+                    <div class="col-xl-4">
+                      <div class="card-body">
+                        <h5 class="card-title">Hercules GYM</h5>
+
+                        <p class="card-text fw-semibold text-body-secondary">
+                          Hercules GYM is a modern gym website designed with a flat, responsive design approach, ensuring optimal user experience across all devices.
+                        </p>
+
+                        <div class="py-2 my-2">
+                          <a href="https://github.com/Tobboki/Gym-Responsive" class="btn btn-secondary fw-semibold" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            Github
+                          </a>
+
+                          <a href="https://herculesgymresponsive.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                            <i class="ri-external-link-line"></i>
+                            Live Demo
+                          </a>
+                        </div>
+
+                        <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Gym Card End -->
+
+              <!-- Burger Card -->
+              <div class="col-12">
+                <div class="work-card | card mb-4">
+                  <div class="row g-2">
+                    <a class="col-xl-8" href="https://loveburgershop.netlify.app/" target="_blank">
+                      <img src="assets/img/Work/Burger.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                    </a>
+
+                    <div class="col-xl-4">
+                      <div class="card-body">
+                        <h5 class="card-title">Love Burger</h5>
+
+                        <p class="card-text fw-semibold text-body-secondary">
+                          A responsive web design project focusing on a burger shop theme. Developed using plain HTML, CSS, and JavaScript, the site is optimized for all screen sizes, ensuring a smooth user experience across devices and it highlights clean, modern UI principles while prioritizing responsiveness.
+                        </p>
+
+                        <div class="py-2 my-2">
+                          <a href="https://github.com/Tobboki/Burger-Restraunt" class="btn btn-secondary fw-semibold" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            Github
+                          </a>
+
+                          <a href="https://loveburgershop.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                            <i class="ri-external-link-line"></i>
+                            Live Demo
+                          </a>
+                        </div>
+
+                        <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Burger Card End -->
+
+              <!-- Json API Card -->
+              <div class="col-12">
+                <div class="work-card | card mb-4">
+                  <div class="row g-2">
+                    <a class="col-xl-8" href="https://simplepostsapi.netlify.app/" target="_blank">
+                      <img src="assets/img/Work/Document.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                    </a>
+
+                    <div class="col-xl-4">
+                      <div class="card-body">
+                        <h5 class="card-title">JSON Holder API</h5>
+
+                        <p class="card-text fw-semibold text-body-secondary">
+                          A web app that fetches and displays posts using the JSONPlaceholder API. Built with HTML, CSS, and JavaScript, featuring responsive design. Implemented API requests to retrieve and display posts, with user-based filtering for a seamless browsing experience.
+
+                          <div class="py-2 my-2">
+                            <a href="https://github.com/Tobboki/Api-s-Web-Components" class="btn btn-secondary fw-semibold" target="_blank">
+                              <i class="ri-github-fill"></i>
+                              Github
+                            </a>
+
+                            <a href="https://simplepostsapi.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                              <i class="ri-external-link-line"></i>
+                              Live Demo
+                            </a>
+                          </div>
+
+                        <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Json API Card End -->
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-front-end" role="tabpanel" aria-labelledby="pills-front-end-tab" tabindex="0">
+            
+            <!-- Amazon Clone Card -->
+            <div class="col-12">
+              <div class="work-card | card mb-4">
+                <div class="row g-2">
+                  <a class="col-xl-8" href="https://amazonclonesearch.netlify.app/" target="_blank">
+                    <img src="assets/img/Work/Amazon-Project.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                  </a>
+
+                  <div class="col-xl-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Amazon Clone</h5>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        A fully functional e-commerce web app simulating the Amazon shopping experience. Built with HTML, CSS, and JavaScript for a responsive UI. Implemented API requests for data, CRUD operations for products and orders, and search functionality using URL parameters for efficient filtering.
+                      </p>
+
+                      <div class="py-2 my-2">
+                        <a href="https://github.com/Tobboki/Amazon-project" class="btn btn-secondary fw-semibold" target="_blank">
+                          <i class="ri-github-fill"></i>
+                          Github
+                        </a>
+
+                        <a href="https://amazonclonesearch.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                          <i class="ri-external-link-line"></i>
+                          Live Demo
+                        </a>
+                      </div>
+
+                      <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Amazon Clone Card End -->
+
+            <!-- Gym Card -->
+            <div class="col-12">
+              <div class="work-card | card mb-4">
+                <div class="row g-2">
+                  <a class="col-xl-8" href="https://herculesgymresponsive.netlify.app/" target="_blank">
+                    <img src="assets/img/Work/Hercules.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                  </a>
+
+                  <div class="col-xl-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Hercules GYM</h5>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        Hercules GYM is a modern gym website designed with a flat, responsive design approach, ensuring optimal user experience across all devices.
+                      </p>
+
+                      <div class="py-2 my-2">
+                        <a href="https://github.com/Tobboki/Gym-Responsive" class="btn btn-secondary fw-semibold" target="_blank">
+                          <i class="ri-github-fill"></i>
+                          Github
+                        </a>
+
+                        <a href="https://herculesgymresponsive.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                          <i class="ri-external-link-line"></i>
+                          Live Demo
+                        </a>
+                      </div>
+
+                      <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gym Card End -->
+
+            <!-- Burger Card -->
+            <div class="col-12">
+              <div class="work-card | card mb-4">
+                <div class="row g-2">
+                  <a class="col-xl-8" href="https://loveburgershop.netlify.app/" target="_blank">
+                    <img src="assets/img/Work/Burger.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                  </a>
+
+                  <div class="col-xl-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Love Burger</h5>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        A responsive web design project focusing on a burger shop theme. Developed using plain HTML, CSS, and JavaScript, the site is optimized for all screen sizes, ensuring a smooth user experience across devices and it highlights clean, modern UI principles while prioritizing responsiveness.
+                      </p>
+
+                      <div class="py-2 my-2">
+                        <a href="https://github.com/Tobboki/Burger-Restraunt" class="btn btn-secondary fw-semibold" target="_blank">
+                          <i class="ri-github-fill"></i>
+                          Github
+                        </a>
+
+                        <a href="https://loveburgershop.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                          <i class="ri-external-link-line"></i>
+                          Live Demo
+                        </a>
+                      </div>
+
+                      <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Burger Card End -->
+
+            <!-- Json API Card -->
+            <div class="col-12">
+              <div class="work-card | card mb-4">
+                <div class="row g-2">
+                  <a class="col-xl-8" href="https://simplepostsapi.netlify.app/" target="_blank">
+                    <img src="assets/img/Work/Document.png" class="img-fluid rounded-start" alt="Amazon Clone image">
+                  </a>
+
+                  <div class="col-xl-4">
+                    <div class="card-body">
+                      <h5 class="card-title">JSON Holder API</h5>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        A web app that fetches and displays posts using the JSONPlaceholder API. Built with HTML, CSS, and JavaScript, featuring responsive design. Implemented API requests to retrieve and display posts, with user-based filtering for a seamless browsing experience.
+
+                        <div class="py-2 my-2">
+                          <a href="https://github.com/Tobboki/Api-s-Web-Components" class="btn btn-secondary fw-semibold" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            Github
+                          </a>
+
+                          <a href="https://simplepostsapi.netlify.app/" class="btn btn-primary fw-semibold" target="_blank">
+                            <i class="ri-external-link-line"></i>
+                            Live Demo
+                          </a>
+                        </div>
+
+                      <p class="card-text"><small class="text-body-secondary"> Last updated 18 August 2024 </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Json API Card End -->
+
+          </div>
+
+          <div class="tab-pane fade" id="pills-ui" role="tabpanel" aria-labelledby="pills-ui-tab" tabindex="0">
+            <h1> More Work Coming Soon! </h1>
+          </div>
+
+          <div class="tab-pane fade" id="pills-wp" role="tabpanel" aria-labelledby="pills-wp-tab" tabindex="0">
+            <h1> More Work Coming Soon! </h1>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Work Section End -->
 
   </main>
   <!-- Main End -->
