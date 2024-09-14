@@ -119,4 +119,14 @@ body {
 }
 /* Work Section End */
 
+/* Testimonial Section */
+.testimonial-card {
+  transition: box-shadow .4s ease-in-out;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--box-shadow);
+}
+/* Testimonial Section End */
+
 /* *General queries* */
