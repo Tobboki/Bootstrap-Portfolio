@@ -34,7 +34,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="me-auto"></div>
-          <ul class="navbar-nav fw-semibold nav-list gap-md-4">
+          <ul class="navbar-nav fw-semibold nav-list gap-xl-4 gap-lg-2">
             <li class="nav-item">
               <a class="nav-link active-nav-link" aria-current="page" href="#">HOME</a>
             </li>
@@ -583,7 +583,7 @@
             </div>
           </div>
           <!-- Mac Hill testimonial End -->
-           
+
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -597,6 +597,32 @@
       </div>
     </section>
     <!-- Testimonials Section End -->
+
+    <!-- Contact Section -->
+    <section class="container py-4 mt-5" id="contact">
+      <div class="row d-flex flex-row justify-content-center fw-semibold">
+        <form class="contact-form | col-xl-6 col-lg-8 col-md-10  bg-primary text-bg-primary p-4">
+          <div class="mb-3">
+            <label for="client-name" class="form-label">Your Name</label>
+            <input class="form-control" type="text" placeholder="Your Name" aria-label="default input example" id="client-name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="client-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="name@example.com" id="client-email" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text text-bg-primary">We'll never share your email with anyone else.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="client-massage" class="form-label">Your Massage</label>
+            <textarea class="form-control" placeholder="Your massage..." id="client-massage" rows="3" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn bg-white text-black fw-semibold">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
 
   </main>
   <!-- Main End -->

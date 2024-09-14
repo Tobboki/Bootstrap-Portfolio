@@ -129,4 +129,10 @@ body {
 }
 /* Testimonial Section End */
 
+/* Contact Section */
+.contact-form {
+  border-radius: 1em;
+}
+/* Contact Section End */
+
 /* *General queries* */
