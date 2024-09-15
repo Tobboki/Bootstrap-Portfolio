@@ -135,4 +135,12 @@ body {
 }
 /* Contact Section End */
 
+/* Footer Section */
+.footer {
+  background-color: aliceblue;
+  transition: box-shadow 0.4s;
+  box-shadow: 0px 4px 4px 4px hsla(22, 100%, 8%, 0.2);
+}
+/* Footer Section End */
+
 /* *General queries* */
