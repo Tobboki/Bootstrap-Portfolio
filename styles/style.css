@@ -143,4 +143,27 @@ body {
 }
 /* Footer Section End */
 
-/* *General queries* */
+/* Scroll Up Section */
+.scroll-up {
+  padding: 0.5em;
+  position: fixed;
+  right: 1em;
+  bottom: -50em;
+  display: inline-flex;
+  font-size: 1.25rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.35em;
+  box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.2);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.scroll-up:hover {
+  transform: translateY(-0.5em);
+}
+
+.show-scroll-up {
+  bottom: 3em;
+}
+/* Scroll Up Section End */
